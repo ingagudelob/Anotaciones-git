@@ -2,3 +2,17 @@ Mostrar Log de manera ordenada y resumida
 
 git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
+
+…or create a new repository on the command line
+echo "# prueba-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ingagudelob/AppCrv.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/ingagudelob/AppCrv.git
+git branch -M main
+git push -u origin main
